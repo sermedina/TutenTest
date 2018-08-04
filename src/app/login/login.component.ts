@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
     loading = false;
     submitted = false;
     returnUrl: string;
-	parentMessage = "message from parent";
 	token:string;
  
     constructor(
@@ -51,8 +50,6 @@ export class LoginComponent implements OnInit {
                 data => {
 					const tokent= data["sessionTokenBck"];
 					this.token=data["sessionTokenBck"];
-					console.log(data);
-					//console.log(this.token);
                     this.router.navigate(['/booking/'+tokent]);
                 },
                 error => {
