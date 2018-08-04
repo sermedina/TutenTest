@@ -20,7 +20,7 @@ export class NgxDataTableComponent  {
   dataSource: NgxDataTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['bookingId', 'Cliente', 'bookingTime'];
+  displayedColumns = ['bookingId', 'Cliente', 'bookingTime', 'address','price'];
 
 
 }
